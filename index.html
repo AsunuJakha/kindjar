@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kind Jar</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <header>
+        <!--This is header-->
+        <div>
+            <ul class="nav">
+             <li><img src="./resources/logo.jpg" alt="Logo" class="logo"></li>
+             <li><h1 style="font-size: 60px;">Kind Jar</h1></li>
+            </ul>
+        </div>
+    </header>
+    <div class="section1">
+        <!--This is first section-->
+        <div class="ButtonChoice">
+            <a href="#sec2"><button>Leave a message</button></a>
+            <a href="#sec3"><button>Random Pick</button></a>
+        </div>
+    </div>
+    <h1 id="sec2"></h1>
+    <div class="gap"></div>
+    <div class="section2">
+        <!--This is second section-->
+        <main class="container">
+            <!-- Jar Section -->
+            <div class="jar-section">
+                <img src="./resources/jar1.png" alt="Jar" class="jar-image" />
+                <div class="jar-scrolls"></div>
+                <img src="./resources/scroll.png" alt="scroll" class="scroll-animation" />
+            </div>
+
+
+            <!-- Form Section -->
+            <div class="form-section">
+            <form id="messageForm">
+                <label for="message">Your message:</label>
+                <textarea id="message" placeholder="Write something..."></textarea>
+                <button type="submit" id="submitBtn">Submit</button>
+            </form>
+            </div>
+        </main>
+    </div>
+    <h1 id="sec3"></h1>
+    <div class="gap"></div>
+    
+    <div class="section3">
+        <div class="random-section">
+            <button id="pickBtn">Pick a Random Message</button>
+            <div class="gap2"></div>
+            <div id="randomMessage" class="message-box"></div>
+        </div>
+    </div>
+
+    <footer>
+        <p>Spread kindness 💛 | Kind Jar © 2025</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
